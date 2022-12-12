@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seaduf Furniture, Home to all kinds of Furnitures and accessories </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+
+    <!--=============================================
+    =            CSS  files       =
+    =============================================-->
+
+    <!-- Vendor CSS -->
+    <link href="{% static 'css/vendors.css' %}" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+    <!-- Revolution Slider CSS -->
+    <link href="{% static 'revolution/css/settings.css' %}" rel="stylesheet">
+    <link href="{% static 'revolution/css/navigation.css'%}" rel="stylesheet">
+    <link href="{% static 'revolution/custom-setting.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <style>
+        .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+          font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+          z-index:100;
+        }
+        
+        .my-float{
+            margin-top:16px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- navbar -->
+    {% include 'includes/navbar.html' %}
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <!-- footer -->
+    {% include 'includes/footer.html' %}
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=07081159082&text=Hello there, I am making enquiry on this product." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    </div>
+
+    <!-- Vendor JS -->
+    <script src="{% static 'js/vendors.js' %}"></script>
+
+    <!-- Active JS -->
+    <script src="{% static 'js/active.js' %}"></script>
+    <!-- Ajax Mail JS -->
+    <script src="{% static 'js/ajax-mail.js' %}"></script>
+
+    <!--=====  End of JS files ======-->
+
+    <script>
+        setTimeout(function(){
+            $('#message').fadeOut('slow')
+        }, 4000)
+    </script>
+
+
+    <!-- Revolution Slider JS -->
+    <script src="{% static 'revolution/js/jquery.themepunch.revolution.min.js'%}"></script>
+    <script src="{% static 'revolution/js/jquery.themepunch.tools.min.js'%}"></script>
+    <script src="{% static 'revolution/revolution-active.js'%}"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.kenburn.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.slideanims.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.actions.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.layeranimation.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.navigation.min.j'%}s"></script>
+    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.parallax.min.js'%}"></script>
+
+</body>

@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="breadcrumb-area section-space--breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <!--=======  breadcrumb wrapper  =======-->
+
+                <div class="breadcrumb-wrapper">
+                    <h2 class="page-title">About Us</h2>
+                    <ul class="breadcrumb-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">About Us</li>
+                    </ul>
+                </div>
+
+                <!--=======  End of breadcrumb wrapper  =======-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--====================  End of breadcrumb area  ====================-->
+
+<!--====================  page content wrapper ====================-->
+
+<div class="page-content-wrapper">
+
+    <!--=======  about page top wrapper  =======-->
+
+    <div class="about-page-top-wrapper section-space">
+        <!--=======  about us brief wrapper  =======-->
+
+        <div class="about-us-brief-wrapper section-space--small">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-5">
+                        <h2 class="about-us-brief-title">A Better Way To Shop Online For Furniture</h2>
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="about-us-brief-desc">
+                            <p> <span><a href="{% url 'home' %}">Seaduffurnitures </a></span> is more than just an online furniture store. We hand pick and curate the best in quality and style for you and your home.</p>
+
+                            <p>Why spend days driving from store to store trying to find that perfect look or unique piece. Find everything you’re looking for and more from the comfort of your own home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=======  End of about us brief wrapper  =======-->
+
+        <!--=======  about us slider wrapper  =======-->
+
+
+        <div class="about-us-slider-wrapper section-space--small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="about-us-slider theme-slick-slider" data-slick-setting='{
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "arrows": false,
+                            "dots": true,
+                            "autoplay": false,
+                            "autoplaySpeed": 5000,
+                            "speed": 500,
+                            "prevArrow": {"buttonClass": "slick-prev", "iconClass": "fa fa-angle-left" },
+                            "nextArrow": {"buttonClass": "slick-next", "iconClass": "fa fa-angle-right" }
+                        }' data-slick-responsive='[
+                            {"breakpoint":1501, "settings": {"slidesToShow": 1, "arrows": false} },
+                            {"breakpoint":1199, "settings": {"slidesToShow": 1, "arrows": false} },
+                            {"breakpoint":991, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
+                            {"breakpoint":767, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
+                            {"breakpoint":575, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
+                            {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} }
+                        ]'>
+
+                            <!--=======  single slider image  =======-->
+
+                            <div class="single-image">
+                                <img src="{% static 'img/about/about.jpg' %}" class="img-fluid" alt="">
+                            </div>
+
+                            <!--=======  End of single slider image  =======-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--=======  End of about us slider wrapper  =======-->
+
+        <!--=======  about us process section wrapper  =======-->
+
+        <div class="about-us-process-wrapper">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-process">
+                            <h3 class="title"> <span>01.</span> SERVICE</h3>
+                            <p class="description">Our Customer Care Team can answer any questions you may have, as well as provide personalized assistance with: scheduling, availability, bulk orders, custom orders and delivery options.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-process">
+                            <h3 class="title"> <span>02.</span> SELECTION</h3>
+                            <p class="description">Shop our extensive selection of quality furniture and home décor for every room, plus a vast assortment of mattresses, appliances and electronics at prices that can’t be beat!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-process">
+                            <h3 class="title"> <span>03.</span> SATISFACTION</h3>
+                            <p class="description">Shop with confidence! Our Satisfaction Guarantee and Price Match Promise ensure you are always happy with your purchase.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-process">
+                            <h3 class="title"> <span>04.</span> DELIVERY</h3>
+                            <p class="description">Our One Of A Kind Delivery network is fast, reliable and FREE on thousands of items. Delivery is free on all purchases over #5,000,000, plus many home decor items qualify for FREE SHIPPING.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--=======  End of about us process section wrapper  =======-->
+    </div>
+
+    <!--=======  End of about page top wrapper  =======-->
+
+    <!--=======  contact form area  =======-->
+
+    <div class="contact-form-area section-space--inner--contact-form bg--dark-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area text-center">
+                        <h2 class="section-title">DO YOU HAVE ANY QUESTION ?</h2>
+                        <p class="section-subtitle">Your Satisfaction defines our Success</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--=======  contact form wrapper  =======-->
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" action="assets/php/mail.php" method="post">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <input type="text" placeholder="First Name *" name="customerName" id="customername" required>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <input type="text" placeholder="Email *" name="customerEmail" id="customerEmail" required>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" placeholder="Subject" name="contactSubject" id="contactSubject">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea cols="30" rows="10" placeholder="Message *" name="contactMessage" id="contactMessage" required></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" id="submit" class="theme-button"> SEND A MESSAGE</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+
+
+                    <!--=======  End of contact form wrapper  =======-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=======  End of contact form area  =======-->
+
+</div>
+
+
+<!--====================  End of page content wrapper  ====================-->
+{% endblock content %}
