@@ -245,7 +245,10 @@
                                                 <div class="single-list-product__content">
                                                     <h3 class="title"><a href="{{ product.get_url }}">{{product.product_name}}</a></h3>
                                                     {% if product.price %}
-                                                        <div class="price">{% if product.cancelled_price == None %}<span> </span>{% else %} <span class="main-price discounted">₦{{ product.cancelled_price|localize }}</span> {% endif %}<span class="discounted-price">₦{{product.price|localize}}</span></div>
+                                                        {% load humanize %}
+                                                        {% load i18n %}
+                                                        {% load l10n %}
+                                                        <div class="price">{% if product.cancelled_price == None %}<span> </span>{% else %} <span class="main-price discounted">₦{{ product.cancelled_price|floatformat:2|intcomma }}</span> {% endif %}<span class="discounted-price">₦{{product.price|floatformat:2|intcomma}}</span></div>
                                                     {% else %}
                                                         <div class="price"><h5>Price not available</h5></div>
                                                     {% endif %}
