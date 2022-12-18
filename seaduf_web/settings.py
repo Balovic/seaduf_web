@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y6ezhe*p5&hx@h9d+dk2je8ueja94@zt)x9h9$uihxsmn1ck13'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=True, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool) # True
 
-ALLOWED_HOSTS = ["seaduf-env.eba-s62apgne.us-west-2.elasticbeanstalk.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["seaduf-env.eba-s62apgne.us-west-2.elasticbeanstalk.com", "127.0.0.1", "*"]
 
 
 # Application definition
@@ -158,7 +158,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
+STATIC_ROOT = BASE_DIR/'static'
 STATICFILES_DIRS = [
     'seaduf_web/static',
 ]
