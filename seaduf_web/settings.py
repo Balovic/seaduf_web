@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-y6ezhe*p5&hx@h9d+dk2je8ueja94@zt)x9h9$uihxsmn1ck13
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool) # True
 
-ALLOWED_HOSTS = ["seaduf-env.eba-s62apgne.us-west-2.elasticbeanstalk.com", "*"]
+ALLOWED_HOSTS = ["35.178.89.118", "*"]
 
 
 # Application definition
@@ -159,6 +159,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR/'static'
+STATIC_ROOT = '/var/www/seaduf_web/assets/'
 STATICFILES_DIRS = [
     'seaduf_web/static',
 ]
