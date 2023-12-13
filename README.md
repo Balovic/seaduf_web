@@ -20,4 +20,4 @@ This project is licensed under the MIT License.
 
 ---
 
-Thanks for choosing Seaduf Furnitures Co. E-commerce Website! For any issues or suggestions, open an issue. Happy shopping!
+
